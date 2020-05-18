@@ -75,6 +75,7 @@ namespace ProjectTriple
                 if (env.IsDevelopment())
                 {
                     spa.UseAngularCliServer(npmScript: "start");
+                    spa.UseProxyToSpaDevelopmentServer("https://afmamtriple.azurewebsites.net");
                 }
 
             });

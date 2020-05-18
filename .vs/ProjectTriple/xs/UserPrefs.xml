@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{1BA81F7A-2D08-429D-80E0-584D2D72429F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjectTriple/Program.cs">
+    <Files>
+      <File FileName="ProjectTriple/ProjectTriple.csproj" Line="72" Column="1" />
+      <File FileName="ProjectTriple/Program.cs" Line="16" Column="1" />
+      <File FileName="ProjectTriple/appsettings.json" />
+      <File FileName="ProjectTriple/Context/AppDbContext.cs" />
+      <File FileName="ProjectTriple/Startup.cs" />
+      <File FileName="ProjectTriple/appsettings.Development.json" />
+      <File FileName="ProjectTriple/Properties/launchSettings.json" />
+      <File FileName="ProjectTriple/Pages/Error.cshtml" />
+      <File FileName="ProjectTriple/Entities/Achievement.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProjectTriple" expanded="True">
+            <Node name="ProjectTriple" expanded="True">
+              <Node name="Context" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ProjectTriple PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

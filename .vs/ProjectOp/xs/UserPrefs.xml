@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{131C2C77-035E-40BD-96A0-643CB5C0BB3C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProjectOp/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjectOp/ProjectOp.csproj">
     <Files>
       <File FileName="ProjectOp/Entities/Achievement.cs" Line="15" Column="37" />
       <File FileName="ProjectOp/Context/AppDbContext.cs" />
@@ -8,28 +8,19 @@
       <File FileName="ProjectOp/Entities/User.cs" />
       <File FileName="ProjectOp/Pages/Error.cshtml" />
       <File FileName="ProjectOp/Controllers/MemberController.cs" />
-      <File FileName="ProjectOp/Program.cs" Line="21" Column="56" />
+      <File FileName="ProjectOp/Program.cs" />
       <File FileName="ProjectOp/DTO/UserDTO.cs" />
       <File FileName="ProjectOp/DTO/AchievementDTO.cs" />
-      <File FileName="ProjectOp/ProjectOp.csproj" />
+      <File FileName="ProjectOp/ProjectOp.csproj" Line="2" Column="1" />
       <File FileName="ProjectOp/DTO/UsersDTO.cs" />
       <File FileName="ProjectOp/wwwroot/favicon.ico" />
+      <File FileName="ProjectOp/Dockerfile" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ProjectOp" expanded="True">
-            <Node name="ProjectOp" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Context" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="DTO" expanded="True" />
-              <Node name="Entities" expanded="True" />
-              <Node name="Pages" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="wwwroot" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="ProjectOp" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -38,6 +29,7 @@
   <MonoDevelop.Ide.ItemProperties.ProjectOp PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

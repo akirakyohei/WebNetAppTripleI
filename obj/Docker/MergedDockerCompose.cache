@@ -1,0 +1,16 @@
+services:
+  projectop:
+    build:
+      context: /Volumes/libraries/ProjectOp
+      dockerfile: ProjectOp/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: projectop
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - /Users/BuiDong/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/BuiDong/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

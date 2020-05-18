@@ -1,0 +1,36 @@
+services:
+  projectop:
+    build:
+      context: /Volumes/libraries/ProjectOp
+      dockerfile: ProjectOp/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ProjectOp
+      target: base
+    container_name: ProjectOp
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: projectop:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/ProjectOp.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    - target: 443
+    tty: true
+    volumes:
+    - /Volumes/libraries/ProjectOp/ProjectOp:/app:rw
+    - /Users/BuiDong/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/BuiDong/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/BuiDong/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+    - /Users/BuiDong/.nuget/packages:/root/.nuget/packages:ro
+    - /Volumes/libraries/ProjectOp:/src:rw
+version: '3.4'

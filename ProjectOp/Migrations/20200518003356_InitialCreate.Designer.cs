@@ -9,14 +9,14 @@ using ProjectOp.Context;
 namespace ProjectOp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200514160813_InitialCreate")]
+    [Migration("20200518003356_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "3.1.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 

@@ -24,7 +24,7 @@ namespace ProjectOp
         {
             services.AddControllersWithViews();
             services.AddCors();
-            services.AddDbContext<AppDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("connectDb")));
+            services.AddDbContext<AppDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
